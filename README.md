@@ -56,4 +56,4 @@ Missing text was replaced with empty strings because TF-IDF requires string inpu
 
 - Logistic regression performed best due to linear separability of TF-IDF features and effective regularization tuning. Cross-validation ensured generalization, and feature engineering improved minority class detection.
 
-TF-IDF was used to convert raw text into numerical features. Logistic Regression was selected after comparative evaluation against LinearSVC and LightGBM due to superior macro F1 performance. Hyperparameters were tuned using cross-validation to improve generalization. Feature engineering included vote-based and text-length features to enhance predictive performance. The final model achieved macro F1 greater than 0.79.
+TF-IDF was used to convert raw text into numerical features. Logistic Regression was selected after comparative evaluation against LinearSVC and LightGBM due to superior macro F1 performance. Hyperparameters were tuned using cross-validation to improve generalization. Feature engineering included vote-based and text-length features to enhance predictive performance. The final model achieved macro F1 greater than 0.80

@@ -54,6 +54,6 @@ Missing text was replaced with empty strings because TF-IDF requires string inpu
 
 - The dataset is highly imbalanced, with class 0 comprising 57% and class 3 only 2.7%. Accuracy would be misleading, as a model could achieve high accuracy by predicting the majority class. Therefore, Macro F1 was used because it gives equal importance to each class and better reflects balanced performance across categories.
 
-- Logistic regression performed best due to linear separability of TF-IDF features and effective regularization tuning. Cross-validation ensured generalization, and feature engineering improved minority class detection.
+- XGBoost performed best followed by Logistic regression. Cross-validation ensured generalization, and feature engineering improved minority class detection.
 
-TF-IDF was used to convert raw text into numerical features. Logistic Regression was selected after comparative evaluation against LinearSVC and LightGBM due to superior macro F1 performance. Hyperparameters were tuned using cross-validation to improve generalization. Feature engineering included vote-based and text-length features to enhance predictive performance. The final model achieved macro F1 greater than 0.80
+TF-IDF was used to convert raw text into numerical features. Hyperparameters were tuned using cross-validation to improve generalization. Feature engineering included vote-based and text-length features to enhance predictive performance. The final model achieved macro F1 greater than 0.80
